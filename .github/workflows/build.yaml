@@ -36,4 +36,6 @@ jobs:
         with:
           push: true
           tags: ghcr.io/${{ github.repository }}
+          build-args: |
+            GIT_SHA=${{ github.sha }}
 
